@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#101218" />
+  <title>LAST COMMIT — Humans vs. AI</title>
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <div class="ambient ambient-a"></div><div class="ambient ambient-b"></div>
+  <header class="topbar"><a class="brand" href="/"><span class="brand-mark">LC</span><span>LAST COMMIT<small>HUMANS VS. AI</small></span></a><div class="top-right"><span class="live-dot"></span><span>LIVE CORPORATE SIMULATION</span></div></header>
+  <main id="app">
+    <section id="landing" class="landing">
+      <div class="hero-copy"><div class="eyebrow"><span class="eyebrow-line"></span> THE BOARDROOM IS ON FIRE</div><h1>Every choice<br/>has a <em>cost.</em></h1><p class="hero-sub">One company. Six rounds. No clean exits.</p><p class="body-copy">Negotiate in public. Commit in secret. Watch the consequences land all at once. Keep the company alive while your faction fights for the future — and your own agenda stays hidden.</p>
+        <div class="hero-actions"><button id="createBtn" class="btn btn-primary">Create a room <span>↗</span></button><button id="joinToggle" class="btn btn-secondary">Join a room</button></div>
+        <form id="joinForm" class="join-form hidden"><label for="roomCode">ROOM CODE</label><div class="join-row"><input id="roomCode" maxlength="6" placeholder="ABC123" autocomplete="off"/><button class="btn btn-secondary" type="submit">Join</button></div></form>
+        <div class="hero-foot"><span>03–06 PLAYERS</span><i></i><span>15–20 MINUTES</span><i></i><span>NO TRUST, NO FUTURE</span></div>
+      </div>
+      <div class="hero-art"><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="core-card"><div class="core-top"><span>ENTERPRISE STATUS</span><span class="status-pill">UNSTABLE</span></div><div class="core-logo">LC<span>_</span></div><div class="core-line"></div><div class="core-stats"><div><small>CASH</small><b>70</b></div><div><small>TRUST</small><b>65</b></div><div><small>STABILITY</small><b>65</b></div></div><div class="core-footer"><span>HUMAN OVERSIGHT</span><span class="signal">● ● ●</span></div></div><div class="float-tag tag-human"><span class="tag-symbol">H</span><span>HUMANS<small>CONTROL THE FUTURE</small></span></div><div class="float-tag tag-ai"><span class="tag-symbol">AI</span><span>ARTIFICIAL INTELLIGENCE<small>OPTIMIZE EVERYTHING</small></span></div><div class="orbit-label">SYSTEM 01 / BOARDROOM</div></div>
+      <div class="feature-strip"><div><span class="feature-num">01</span><b>NEGOTIATE</b><small>Promises are cheap.</small></div><div><span class="feature-num">02</span><b>COMMIT</b><small>Actions stay secret.</small></div><div><span class="feature-num">03</span><b>RESOLVE</b><small>Consequences don't.</small></div></div>
+    </section>
+    <section id="roomView" class="room-view hidden"></section>
+    <div id="toast" class="toast hidden" role="status"></div>
+  </main>
+  <script type="module" src="/app.js"></script>
+</body>
+</html>
